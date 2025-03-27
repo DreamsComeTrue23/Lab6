@@ -21,12 +21,5 @@ double h_function()
     cout << "Enter n: ";
     cin >> n;
 
-    if (n == 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return 1.0 / n + h_function(n - 1);
-    }
+    return h_function(n);
 }
